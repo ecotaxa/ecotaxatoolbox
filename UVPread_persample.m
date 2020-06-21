@@ -37,7 +37,7 @@ expo=[base(:).exp];
 aa=[base(:).aa];
 %pixelsize=aa.^(expo); %
 pixelsize=[base(:).PixelSize]; %in mm
-pixelsize=pixelsize.^0.5; % in mm2
+%pixelsize=pixelsize.^0.5; % in mm2
 
 
 % sampleheaders=readtable('allsampleheaders.xlsx');
@@ -318,8 +318,8 @@ if  test>0
             %% updating to remove temporary groups
             for i=1:m
                 base_Zooscan(i).tot.Zoo_groups(test2)=[];
-                base_Zooscan(i).tot.Ab(test2)=[];              % abundance per fraction rapportée au volume (#/m3)
-                base_Zooscan(i).tot.Bv(test2)=[];               % abundance per fraction rapportée au volume (#/m3)
+                base_Zooscan(i).tot.Ab(test2)=[];              % abundance per fraction rapportÃ©e au volume (#/m3)
+                base_Zooscan(i).tot.Bv(test2)=[];               % abundance per fraction rapportÃ©e au volume (#/m3)
                 
                 base_Zooscan(i).tot.Yab(:,test2)=[];
                 base_Zooscan(i).tot.Ybv_Plain_Area_BV_spectra (:,test2)=[];
